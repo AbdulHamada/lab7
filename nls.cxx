@@ -28,8 +28,8 @@ int main()
            ytemp[1] = y[1] + dt * 0.5 * k1[1];
  
       funct(k2, ytemp, eta);
-           ytemp1[0]= y[0]+dt*(-1*k1[0]+2*k2[0]);
-           ytemp1[1]= y[1]+dt*(-1*k1[1]+2*k2[1]);
+           ytemp[0]= y[0]+dt*(-1*k1[0]+2*k2[0]);
+           ytemp[1]= y[1]+dt*(-1*k1[1]+2*k2[1]);
 
      funct(k3, ytemp, eta);
           y[0] += dt/6*(k1[0]+4*k2[0]+k3[0]);
